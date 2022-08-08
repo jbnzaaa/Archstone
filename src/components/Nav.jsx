@@ -1,24 +1,36 @@
 import React from 'react'
+import { BrowserRouter } from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link'
+import Fade from 'react-reveal/Fade'
 
 function Nav() {
   return (
     <>
-      <div className="container mx-auto px-20 py-3">
-        <div className="flex flex-row justify-between items-center">
-          {/* Logo */}
-          <h3 className="text-xl text-black font-cinzel font-bold">Archstone</h3>
-          {/* Nav Links */}
-          <ul className='flex items-center'>
-            <li className='text-sm text-black mx-4 font-montserrat'>Home</li>
-            <li className='text-sm text-black mx-4 font-montserrat'>Offers</li>
-            <li className='text-sm text-black mx-4 font-montserrat'>Contact</li>
-            <li className='text-sm text-black mx-4 font-montserrat'>FAQ</li>
-            <li className='text-sm text-black mx-4 font-montserrat'>
-              <button className='bg-black w-[149px] h-[38px] text-white'>Inquire</button>
-            </li>
-          </ul>
+      <BrowserRouter>
+        <div className="container mx-auto px-20 py-3">
+          <div className="flex flex-row justify-between items-center">
+            {/* Logo */}
+            <Fade bottom>
+              <Link to='/#' className="text-xl text-black font-cinzel font-bold">Archstone</Link>
+            </Fade>
+            {/* Nav Links */}
+            <ul className='flex items-center'>
+              <Fade bottom delay={40}>
+                <Link to='/' className='text-sm text-black mx-4 font-montserrat hover:border-b-2 border-black'>Home</Link>
+                <Link to='/#about' className='text-sm text-black mx-4 font-montserrat hover:border-b-2 border-black'>About</Link>
+                <Link to='/#offers' className='text-sm text-black mx-4 font-montserrat hover:border-b-2 border-black'>Offers</Link>
+                <Link to='/#contact' className='text-sm text-black mx-4 font-montserrat hover:border-b-2 border-black'>Contact</Link>
+                <Link to='/#FAQ' className='text-sm text-black mx-4 font-montserrat hover:border-b-2 border-black'>FAQ</Link>
+              </Fade>
+              <Link to='/' className='text-sm text-black mx-4 font-montserrat'>
+                <Fade bottom delay={80}>
+                  <button className='bg-black w-[149px] h-[38px] text-white hover:bg-[black]'>Inquire</button>
+                </Fade>
+              </Link>
+            </ul>
+          </div>
         </div>
-      </div>
+      </BrowserRouter>
     </>
   )
 }

@@ -1,4 +1,6 @@
 import './App.css';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+
 import Body from './components/Body';
 import Contact from './components/Contact';
 import FAQ from './components/FAQ';

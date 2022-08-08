@@ -20,6 +20,16 @@ module.exports = {
         'img-3': "url('https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1892&q=80')",
       }
     },
+    screens: {
+      '3xl': {'max': '2561px'},
+      '2.5xl': {'max': '1650px'},
+      '2xl': {'max': '1535px'},
+      '1.5xl': {'max': '1450px'},
+      'xl': {'max': '1279px'},
+      'lg': {'max': '1023px'},
+      'md': {'max': '768px'},
+      'sm': {'max': '639px'},
+    },
   },
   plugins: [
     require('@tailwindcss/forms')
