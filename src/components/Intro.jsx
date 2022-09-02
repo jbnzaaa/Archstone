@@ -5,14 +5,14 @@ function Intro() {
   return (
     <>
     {/* Intro */}
-      <div id="about" className="container mx-auto px-20 py-10 h-[50vh] flex flex-col justify-center">
-        <div className="grid grid-cols-3 gap-10">
+      <div id="about" className="container mx-auto px-20 py-10 h-[50vh] flex flex-col justify-center sm:px-5 h-[80vh] lg:px-7">
+        <div className="grid grid-cols-3 gap-10 sm:grid-cols-1 gap-5">
           <section>
             <Fade bottom>
-              <h3 className='font-cinzel text-[30px]'>Welcome to Archstone</h3>
+              <h3 className='font-cinzel text-[30px] sm:text-[20px] lg:text-[24px]'>Welcome to Archstone</h3>
             </Fade>
           </section>
-          <section className="text-black text-sm font-montserrat">
+          <section className="text-black text-sm font-montserrat sm:text-xs lg:text-xs">
             <Fade bottom delay={40}>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu et nibh ac sem nisi. 
@@ -21,7 +21,7 @@ function Intro() {
               </p>
             </Fade>
           </section>
-          <section className="text-black text-sm font-montserrat">
+          <section className="text-black text-sm font-montserrat sm:text-xs lg:text-xs">
             <Fade bottom delay={80}>
               <p>
                 Sit sit tellus, tellus, a varius arcu. Viverra sit rhoncus pellentesque vulputate 
