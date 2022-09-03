@@ -5,11 +5,11 @@ function Contact() {
   return (
     <>
       <div id="contact">
-        <div className="container mx-auto px-20 py-10 h-[70vh] sm:px-5 h-auto lg:px-7">
+        <div className="container mx-auto px-20 py-10 h-[70vh] sm:px-5 h-auto md:px-7">
           <section className='flex items-center'>
             <Fade bottom>
-              <h4 className='font-cinzel text-[30px] sm:text-[20px] lg:text-[24px]'>Make an appointment</h4>
-              <span className='bg-black w-[70px] h-[1px] ml-4 sm:w-[50px] lg:w-[60px]'></span>
+              <h4 className='font-cinzel text-[30px] sm:text-[20px] md:text-[24px]'>Make an appointment</h4>
+              <span className='bg-black w-[70px] h-[1px] ml-4 sm:w-[50px] md:w-[60px]'></span>
             </Fade>
           </section>
           {/* Guidelines */}
@@ -17,7 +17,7 @@ function Contact() {
             <div className="grid grid-cols-2 gap-20 sm:grid-cols-1 gap-5">
               <div className="col-span-1 h-full">
                 <Fade bottom>
-                  <p className='w-[500px] text-sm sm:text-xs w-[100%] lg:text-sm'>
+                  <p className='w-[500px] text-sm sm:text-xs w-[100%] md:text-sm'>
                     Duis in faucibus sodales nibh eget. Eget pellentesque tortor semper sapien purus. Sit sit tellus, 
                     Ac at tellus nisl porttitor sit euismod cum pellentesque diam. Tellus justo velit tristique augue 
                     sed lorem cursus laoreet ullamcorper. Eget pellentesque tortor. Tellus justo velit tristique augue 
@@ -56,7 +56,7 @@ function Contact() {
                     </Fade>
                   </label>
                   <Fade bottom delay={160}>
-                    <button className='bg-black w-[100%] h-[45px] text-white text-sm font-montserrat mt-5 hover:bg-[black] sm:text-xs lg:text-sm'>make appointment</button>
+                    <button className='bg-black w-[100%] h-[45px] text-white text-sm font-montserrat mt-5 hover:bg-[black] sm:text-xs md:text-sm'>make appointment</button>
                   </Fade>
                 </form>
               </div>
