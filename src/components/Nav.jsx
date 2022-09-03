@@ -8,14 +8,14 @@ function Nav() {
   return (
     <>
       <BrowserRouter>
-        <div className="container mx-auto px-20 py-3 sm:px-5 lg:px-7">
+        <div className="container mx-auto py-3 sm:px-5 lg:px-7 3xl:px-20">
           <div className="flex flex-row justify-between items-center">
             {/* Logo */}
             <Fade bottom>
-              <Link to='/#' className="text-xl text-black font-cinzel font-bold sm:text-[18px] font-semibold lg:text-[18px] font-semibold">Archstone</Link>
+              <Link to='/#' className="text-black font-cinzel font-bold sm:text-[18px] font-semibold lg:text-[18px] font-semibold 3xl:text-xl">Archstone</Link>
             </Fade>
             {/* Nav Links */}
-            <ul className='flex items-center sm:hidden lg:hidden'>
+            <ul className='flex items-center sm:hidden lg:hidden 3xl:flex'>
               <Fade bottom delay={40}>
                 <Link to='/' className='text-sm text-black mx-4 font-montserrat hover:border-b-2 border-black'>Home</Link>
                 <Link to='/#about' className='text-sm text-black mx-4 font-montserrat hover:border-b-2 border-black'>About</Link>
@@ -30,7 +30,7 @@ function Nav() {
               </Link>
             </ul>
             {/* Nav Menu Burger */}
-            <div className='sm:block lg:block'>
+            <div className='sm:block lg:block 3xl:hidden'>
               <RiMenu4Line/>
             </div>
             {/* <ul className='flex items-center sm:hidden'>
